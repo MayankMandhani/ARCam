@@ -1,0 +1,107 @@
+<?xml version="1.0"
+            encoding="UTF-8"?>
+
+    <RelativeLayout tools:context="com.example.arcam.MainActivity"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            xmlns:tools="http://schemas.android.com/tools"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/fullsc">
+
+
+    <fragment android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:name="com.google.ar.sceneform.ux.ArFragment"
+        android:id="@+id/rear_fragment"/>
+
+    <fragment
+        android:id="@+id/mask_fragment"
+        android:name="com.example.arcam.FaceArFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:layout_above="@+id/capture">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@android:color/holo_green_light"
+            android:visibility="gone"
+            android:id="@+id/white"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:visibility="gone"
+            android:background="@android:color/black"
+            android:id="@+id/black"/>
+
+        <ImageView
+            android:id="@+id/blue"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#00093A"
+            android:visibility="gone"
+            />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:visibility="gone"
+            android:background="@android:color/holo_red_dark"
+            android:id="@+id/red"/>
+        <ImageView
+            android:id="@+id/yellow"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#FFF200"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <Button android:layout_height="85dp"
+            android:layout_width="85dp"
+            android:id="@+id/capture"
+            android:background="@drawable/shutterf"
+            android:layout_marginBottom="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+
+    <Button android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:id="@+id/clickedimg"
+            android:background="@drawable/galf"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="37.5dp"
+            android:layout_marginBottom="72dp"
+            android:layout_alignParentBottom="true"/>
+
+
+    <Button
+        android:id="@+id/flip"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/flipf" />
+
+    <Button android:layout_height="77dp"
+            android:layout_width="77dp"
+            android:id="@+id/model"
+            android:background="@drawable/filterf"
+            android:layout_marginBottom="52dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_alignParentStart="true"
+            android:gravity="end"
+            android:textAlignment="viewEnd"
+            android:textColor="#ff0000"
+            android:text="OFF"/>
+
+
+
+</RelativeLayout>
